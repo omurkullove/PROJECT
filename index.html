@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>hakaton</title>
+  </head>
+  <body>
+    <!-- Hackathon.
+
+✔️ CRUD – 40 баллов
+✔️ Модальное окно – 10 баллов
+✔️ Дизайн – 10 баллов
+✔️ Адаптивность – 10 баллов
+✔️ Json-server – 10 баллов
+✔️ Пагинация – 10 баллов
+✔️ Поиск – 10 баллов -->
+
+    <!-- Проект «Документация»:
+    1. Создание
+    2. Удаление
+    3. Редактирование
+    4. Список на главном экране
+    5. Создать модальное окно для добавления -->
+    <nav class="navbar navbar-expand-lg bg-info bigContainer">
+      <div class="container-fluid bigContainer">
+        <a class="navbar-brand" href="#">JITSU</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Переключатель навигации"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <button
+              type="button"
+              class="btn btn-modal"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Добавить Аниме
+            </button>
+            <!--  -->
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 search-inp"
+              type="search"
+              placeholder="Поиск"
+              aria-label="Поиск"
+            />
+            <button class="btn btn-outline-success" type="submit">Поиск</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Кнопка-триггер модального окна -->
+
+    <!-- ввод -->
+
+    <!-- Модальное окно -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Введите данные</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <input type="url" class="inpurl w-100" placeholder="КАРТИНКА" />
+              <input type="text" class="inptext w-100" placeholder="НАЗВАНИЕ" />
+              <input
+                type="number"
+                class="inpnum w-100"
+                placeholder="ДАТА ВЫПУСКА"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btnCloser"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+            <button class="add btn btn-primary">add</button>
+            <button class="update btn btn-primary">save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card d-flex flex-row mb-3"></div>
+
+    <!-- pagination block -->
+    <div class="d-flex w-100 justify-content-center pagination-block">
+      <a class="btn btn-dark m-1" href="#" aria-label="Previous" id="prev-page">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+      <a class="btn btn-dark m-1" href="#" aria-label="Next" id="next-page">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </div>
+    <!-- pagination block end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

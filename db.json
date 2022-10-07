@@ -1,0 +1,41 @@
+{
+  "users": [],
+  "product": [
+    {
+      "id": 7,
+      "image": "http://ru5.hdreska.club/static/types/cinema/posters/40280.jpg",
+      "title": "Demon ",
+      "num": "2018"
+    },
+    {
+      "id": 9,
+      "image": "https://thumbs.dfs.ivi.ru/storage6/contents/5/8/445ecda81cbf9301ff8461ce755142.jpg",
+      "title": "Бездомный бог ",
+      "num": "2017"
+    },
+    {
+      "id": 11,
+      "image": "https://mf-static-ssl.more.tv/jackal/2603605/36e6cd75-7320-4ccd-a346-d1c84588bad6_W250_H355.webp",
+      "title": "Токио",
+      "num": "2002"
+    },
+    {
+      "image": "https://static.hdrezka.ac/i/2020/9/8/l1e5abeaa3d83uv26w74p.png",
+      "title": "Грабитель",
+      "num": "2019",
+      "id": 12
+    },
+    {
+      "image": "https://anime-online.su/uploads/mini/imgshortsfilm/dc/ac5388d32f938a7df1c1334d957a33.jpg",
+      "title": "Дед",
+      "num": "2022",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "image": "https://study-japan-guide.com/media/articles/307_h9d25.jpg",
+      "title": "Твое имя",
+      "num": "2011"
+    }
+  ]
+}
